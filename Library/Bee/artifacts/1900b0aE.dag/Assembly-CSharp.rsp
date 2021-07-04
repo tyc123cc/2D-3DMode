@@ -300,8 +300,8 @@
 -r:"D:/Unity 2021.1.9f1c1/Editor/Data/NetStandard/Extensions/2.0.0/System.Numerics.Vectors.dll"
 -r:"D:/Unity 2021.1.9f1c1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"D:/Unity 2021.1.9f1c1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
--r:"D:/workspace/Unity/2D-3DMode/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll"
--r:"D:/workspace/Unity/2D-3DMode/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"D:/workspace/Unity/2D-3DMode/2D-3DMode/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll"
+-r:"D:/workspace/Unity/2D-3DMode/2D-3DMode/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/PsdPlugin.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Animation.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Animation.Runtime.ref.dll"
@@ -352,6 +352,7 @@
 "Assets/Scripts/Enemy.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/HitManager.cs"
+"Assets/Scripts/JumpSpeedInputField.cs"
 "Assets/Scripts/Player.cs"
 -langversion:8.0
 

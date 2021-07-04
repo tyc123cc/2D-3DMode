@@ -12,7 +12,12 @@ public class GameManager : MonoBehaviour
     /// <summary>
     /// 角色
     /// </summary>
-    public List<GameObject> m_player;
+    public List<GameObject> m_players;
+
+    /// <summary>
+    /// 玩家
+    /// </summary>
+    public Player m_player;
 
     /// <summary>
     /// 攻击碰撞器
@@ -71,7 +76,7 @@ public class GameManager : MonoBehaviour
     public void ShowPlayerColliderSet()
     {
         // 设置人物碰撞器
-        ShowColliderSet(m_player[0], ColliderType.Player);
+        ShowColliderSet(m_players[0], ColliderType.Player);
     }
 
     /// <summary>
@@ -171,7 +176,7 @@ public class GameManager : MonoBehaviour
     /// <param name="show">是否显示</param>
     public void ShowPlayerCollider(bool show)
     {
-        foreach (GameObject player in m_player)
+        foreach (GameObject player in m_players)
         {
             Transform img = player.transform.Find("PlayerCollider");
             // 显示/隐藏人物碰撞器
@@ -233,7 +238,7 @@ public class GameManager : MonoBehaviour
     /// <param name="y">宽度</param>
     public void SetPlayerColliderSize(float x, float y)
     {
-        foreach (GameObject player in m_player)
+        foreach (GameObject player in m_players)
         {
             // 设置人物碰撞器大小
             BoxCollider2D collider = player.GetComponent<BoxCollider2D>();
@@ -291,5 +296,15 @@ public class GameManager : MonoBehaviour
         Transform img = collider.transform.Find("SkyImage");
         // 设置碰撞器图像大小
         img.localScale = new Vector3(x, y, 1);
+    }
+
+    /// <summary>
+    /// 设置角色跳跃速度
+    /// </summary>
+    /// <param name="speed">跳跃速度</param>
+    public void SetPlayerJumpSpeed(string speed)
+    {
+        // 设置角色跳跃速度
+        m_player.m_jumpSpeed = float.Parse(speed);
     }
 }

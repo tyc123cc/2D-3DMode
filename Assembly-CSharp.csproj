@@ -57,6 +57,7 @@
     <Compile Include="Assets\Scripts\Collider\GroundCollider.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Character.cs" />
+    <Compile Include="Assets\Scripts\Collider\SkyCollider.cs" />
     <Compile Include="Assets\Scripts\Configure\SceneLimit.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
@@ -64,7 +65,7 @@
     <Compile Include="Assets\Scripts\Configure\ColliderType.cs" />
     <Compile Include="Assets\Scripts\ColliderSet.cs" />
     <Compile Include="Assets\Scripts\Collider\AttackCollider.cs" />
-    <Compile Include="Assets\Scripts\Collider\SkyCollider.cs" />
+    <Compile Include="Assets\Scripts\JumpSpeedInputField.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shader\TransParant.shader" />
