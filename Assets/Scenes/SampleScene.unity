@@ -5766,7 +5766,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_menu: {fileID: 1382922347}
-  m_players: []
+  m_players:
+  - {fileID: 228809294}
   m_player: {fileID: 1063570600}
   m_acctakCollider: {fileID: 779064327}
   m_groundCollider_Player: {fileID: 590934170}
